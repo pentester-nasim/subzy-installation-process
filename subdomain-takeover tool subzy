@@ -1,0 +1,22 @@
+*** subzy intall ***
+1. Requirement — latest golang should be installed on your system.
+2. Open terminal
+3. Run below commands -
+
+go install -v github.com/LukaSikic/subzy@latest
+sudo cp ~/go/bin/subzy /bin/
+
+
+Usage :
+4. To check installation, run -
+
+subzy -h
+
+5. To test list of subdomains, use below command -
+
+subzy run --targets list.txt
+
+6. To test Single or multiple targets, use below command -
+
+I)subzy run --target http://testphp.vulnweb.com
+II)subzy run --target http://testphp.vulnweb.com,test.google.com,https://test.yahoo.com
